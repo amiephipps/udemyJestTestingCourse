@@ -23,8 +23,6 @@ it('does not throw warning or error with expected props', () => {
   checkProps(GuessedWords, defaultProps)
 })
 
-
-
 // describe is a way to group tests, and keep them organized, documents it as well - whoever looks at this will know what you are trying to test
 describe('if there are no words guessed', () => {
   let wrapper
