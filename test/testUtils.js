@@ -1,4 +1,7 @@
 import checkPropTypes from 'check-prop-types'
+import { createStore } from 'redux'
+
+import rootReducer from '../src/reducers'
 
 // returns node(s) that match the given data attribute
 export const findByTestAttr = (wrapper, val) => {
@@ -14,4 +17,9 @@ export const checkProps = (component, conformingProps) => {
   )
 
   expect(propError).toBeUndefined()
+}
+
+// create new store to test with
+export const storeFactory = (initialState) => {
+  return createStore(rootReducer, initialState)
 }
