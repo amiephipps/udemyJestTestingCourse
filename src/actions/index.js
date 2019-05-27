@@ -12,7 +12,6 @@ export const guessWord = (guessedWord) => {
   return (dispatch, getState) => {
     // thunk allows the 'getState' here
     const state = getState()
-    console.log(state, 'state')
     const secretWord = state.secretWord
     const letterMatchCount = getLetterMatchCount(guessedWord, secretWord)
 
@@ -31,6 +30,12 @@ export const guessWord = (guessedWord) => {
 
 export const getSecretWord = () => {
   return (dispatch) => {
-    axios.get('http://localhost:3000')
+    return axios.get('http://localhost:3000')
+      .then(response => {
+        dispatch({
+          type: actionTypes.SET_SECRET_WORD,
+          payload: response.data
+        })
+      })
   }
 }
