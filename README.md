@@ -1,3 +1,7 @@
+#### Udemy Course - Testing with React/Jest, Jotto app
+
+This isn't a fully funtioning app, rather is focused on the tests written
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
