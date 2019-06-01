@@ -34,7 +34,7 @@ export const getSecretWord = () => {
       .then(response => {
         dispatch({
           type: actionTypes.SET_SECRET_WORD,
-          payload: response.data
+          payload: 'trains'
         })
       })
   }

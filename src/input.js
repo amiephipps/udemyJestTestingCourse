@@ -38,7 +38,7 @@ export class UnconnectedInput extends React.Component {
     )
 
     return (
-      <div data-test="component-input">
+      <div data-test="component-input" id='hello'>
         { content }
       </div>
     )
