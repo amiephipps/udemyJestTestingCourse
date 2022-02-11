@@ -28,7 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "ajv": "^6.7.0",
+    "ajv": "^6.12.3",
     "check-prop-types": "^1.1.2",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.8.0",
